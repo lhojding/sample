@@ -1,0 +1,21 @@
+---
+openapi: 3.0.0
+info:
+  title: actuator-sample
+  version: 1.0.0
+paths:
+  /hello:
+    get:
+      responses:
+        200:
+          content:
+            application/json: {}
+    parameters:
+    - name: name
+      in: query
+      schema:
+        type: string
+    - name: service
+      in: query
+      schema:
+        type: string
